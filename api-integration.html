@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><title>API Integration</title>
+<meta name="title" content="API Integration">
+<meta name="dc.title" content="API Integration">
+<meta name="description" content="Best backtesting platforms for API integration, helping you to optimize your algo trading strategies and automate your trading operations.">
+<meta name="keywords" content="API Integration,API Integration">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://Backtesting.netlify.app/api-integration.html">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,400,500,600,700,800,900&amp;display=swap">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="img/logo.jpg" alt="API Integration" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<style type="text/css"> 
+.xac9aeefaad5f35cd6c10b07f8ae7d0f0 .card .card-header{
+background-color: #ffffff;
+padding: 0;
+border-bottom-color: #f6f6f6;
+}
+.w913705a912d4109fb5c4a1b19114e57d p,.w913705a912d4109fb5c4a1b19114e57d a,.w913705a912d4109fb5c4a1b19114e57d span,.w913705a912d4109fb5c4a1b19114e57d label{
+font-size:16px!important;
+}
+.xdea932ac797a2b6cda9b5c4c3e6cc13c{
+font-size: 2rem !important;
+}
+.x4ad11e5c0523e5a40e282ce853b1ad85{
+max-height: 300px;
+overflow-y: auto;
+}
+.v1e400c60dab1b81766c34a58e54c1b40 p,.v1e400c60dab1b81766c34a58e54c1b40 span,.v1e400c60dab1b81766c34a58e54c1b40 label{
+font-size:16px!important;
+}
+.vb8e1b3886e4325033f1c2dfcb9b2ecbd{
+transition: all 0.3s;
+border-radius: 30px;
+}
+.xac9aeefaad5f35cd6c10b07f8ae7d0f0 .card .card-header h6.collapsed{
+color: #0e115e;
+}
+.xac9aeefaad5f35cd6c10b07f8ae7d0f0 .card .card-header h6 span{
+font-size: 1.5rem;
+}
+.tf46c1faf9bea3f2a7682968965b7be47{
+background-color: #030303;
+font-size: 29.7px;
+height: 56.4px;
+min-width: 56.1px;
+padding: 0.7rem;
+padding-top: 13px;
+color: #fff !important;
+border: 1px solid #0e0e0e;
+border-radius: 50%;
+}
+.d81824bb4cafc71f6c659ed44acdb6fa7 i:hover{
+background: white;
+color: #ffc208;
+border-radius: 50%;
+width: 37px;
+text-align: center;
+height: 36.6px;
+}
+.vf02780b7a4d2adfdba547162a165a31f:hover,.a5bf034bfdca2ea09584595e1ad0fc3ce:hover{
+background-size: 100% 100% !important;
+background-image: linear-gradient(120deg,  0%,  100%) !important;
+background-repeat: no-repeat !important;
+background-position: 0 90% !important;
+transition: background-size 0.2s ease-in !important;
+}
+.btn-md{
+padding: 15.5px 29.8px;
+border-radius: 0;
+}
+.xac9aeefaad5f35cd6c10b07f8ae7d0f0 .card .card-body p:last-child{
+margin-bottom: 0;
+}
+.v1e400c60dab1b81766c34a58e54c1b40{
+background:#ffffff;
+}
+.xac9aeefaad5f35cd6c10b07f8ae7d0f0{
+position: relative;
+z-index: 1;
+}
+.w913705a912d4109fb5c4a1b19114e57d a,.v1e400c60dab1b81766c34a58e54c1b40 a{
+color:#131313!important;
+text-decoration: underline !important;
+}
+.dropdown-menu{
+top:79%;
+max-width: 800px;
+overflow-x: auto;
+}
+.c1e723e0734a738b293f883a63a1635b0{
+font-size:16px!important;
+color: #616161;
+}
+.v1e400c60dab1b81766c34a58e54c1b40 *{
+color:#060606!important;
+}
+.c314a6e28080f667ab171f7155f5a494f{
+background:#eae8e4!important ;
+}
+.navbar-toggler span{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid lightgrey;
+border-radius: 3px;
+}
+footer{
+background:#010101;
+color:#ffffff;
+}
+.v1e400c60dab1b81766c34a58e54c1b40 a{
+font-size:16px;
+}
+.nav-item{
+padding-left:7.9px;
+padding-right:8px;
+padding-top:5.1px;
+padding-bottom:4.7px;
+}
+.ab95790546ca7ac4698a7e71e417a9d42{
+width: 100%;
+max-height: 720px;
+object-fit: cover;
+object-position: center;
+display: block;
+max-height: 100%;
+max-width: 100%;
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+}
+.nav-link{
+color: #000000!important;
+
+}
+*{
+font-family: 'Kumbh Sans', sans-serif;
+}
+.x22f8f0c25c2cf9a53127fea97e835060{
+color: #404040;
+}
+.yfa69c9f092b3f372c35bb13416f04c2c{
+font-size: 45px!important;
+}
+.xac9aeefaad5f35cd6c10b07f8ae7d0f0 .card .card-header h6{
+cursor: pointer;
+padding: 1.75rem 2rem;
+color: #3f43fd;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-ms-grid-row-align: center;
+align-items: center;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+footer *{
+font-size:16px !important;
+}
+.ybcd6c5097195e38e278221762921dd04{
+font-size:45px!important;
+}
+.b0ada9dd0e8ba9d0d1eda6cfe86324ff1{
+color: #9d9d9d;
+font-size: 20.1px;
+margin-bottom: 21.3px;
+}
+.vab454366c63f39d7af3db5c11bb0f411{
+background: rgba(0, 0, 0, 0.6);
+text-align: center;
+}
+.xac9aeefaad5f35cd6c10b07f8ae7d0f0 .card .card-body{
+padding: 1.75rem 2rem;
+}
+.y3e50f703816aae409f0ee921fd70c67f{
+text-decoration: underline!important;color:#ff841a!important
+}
+.navbar a{
+font-size: 18.4px!important;
+font-weight: bold;
+}
+.u55f762f2eb7981197b2d7f3d81bafa58{
+position: relative;
+z-index: 1;
+}
+.d178c4f877f7f9f413dee9e78b7c19d5c{
+font-size: 13.5px;
+}
+.c0de328a5bcc5d3830b3869a734a7b81a{
+font-size: 20.3px;
+font-weight: bold;
+}
+.w913705a912d4109fb5c4a1b19114e57d{
+background:#f2f0ec;
+color:#131313;
+}
+html{
+scroll-behavior: smooth;
+}
+.xd4c0e99eb77605478848b72cb8c3c36a{
+position: relative;
+min-height: 30px
+}
+.xac9aeefaad5f35cd6c10b07f8ae7d0f0 .card:last-child{
+margin-bottom: 0;
+}
+.xac9aeefaad5f35cd6c10b07f8ae7d0f0 .card .card-header h6.collapsed span{
+-webkit-transform: rotate(-180deg);
+transform: rotate(-180deg);
+}
+footer a{
+color:#ffffff;
+text-decoration: underline;
+}
+ul{
+list-style: circle;
+}
+.d81824bb4cafc71f6c659ed44acdb6fa7 i{
+border-radius: 50%;
+width: 37px;
+text-align: center;
+height: 37.1px;
+}
+.vab454366c63f39d7af3db5c11bb0f411 *{
+color: white !important;
+}
+iframe{
+border: none!important;
+}
+.xab03afb1263c748c6392c1628ca1fc0a *{
+color:#000000;
+}
+.xac9aeefaad5f35cd6c10b07f8ae7d0f0 .card{
+position: relative;
+z-index: 1;
+margin-bottom: 1.5rem;
+}
+body{
+color: #353535;
+}
+.c4660c6c76b8587b7f142b76a2e53146e{
+background-color:#ffc107!important;
+border-color:#ffc107!important;
+color:#000000!important;
+}
+.vb8e1b3886e4325033f1c2dfcb9b2ecbd:hover{
+box-shadow: 0 49.6px 50.3px -25px rgb(0 0 0 / 30%);
+transform: rotate(-2deg) scale(1.03);
+}
+.a5bf034bfdca2ea09584595e1ad0fc3ce{
+font-weight: inherit;
+background-image: linear-gradient(120deg, #ffc759 0%, #ffcd5f 100%);
+background-repeat: no-repeat;
+background-size: 100% 30%;
+background-position: 0 90%;
+transition: background-size 0.2s ease-in;
+}
+a{
+text-decoration: none;
+}
+ 
+@media only screen and (max-width:1000px) {
+.xd4c0e99eb77605478848b72cb8c3c36a {
+min-height: 0px !important;
+}
+.ybcd6c5097195e38e278221762921dd04 {
+font-size: 20px;
+}
+.b0ada9dd0e8ba9d0d1eda6cfe86324ff1 {
+font-size: 15px !important;
+}
+.t5d0482ad381bcf54c4aa3fad934ba25b{
+padding-bottom: 0px !important;
+}
+} 
+</style>
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "ProfessionalService", 
+"logo": "img/logo.jpg",
+"image": "img/logo.jpg",
+"url": "https://Backtesting.netlify.app/",
+"address": {
+"@type": "PostalAddress"} }
+</script>
+<script type="application/ld+json">
+{
+"@type": "WebPage",
+"@context": "http://www.schema.org","temporalCoverage": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/",
+"significantLink": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/",
+"relatedLink": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/","lastReviewed": "2021-12-01",
+"mainContentOfPage": {
+"about": {"sameAs": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/","url": "https://Backtesting.netlify.app/api-integration.html","additionalType": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/","name": "API Integration","identifier": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/","description": "API Integration",
+"disambiguatingDescription": "API Integration"},
+"accessibilitySummary": "API Integration"},
+"mainEntityOfPage": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/","keywords": ["API Integration"],
+"award": ["Best API Integration"],
+"teaches": ["API Integration"],
+"educationalUse": ["API Integration"],
+"text": "API Integration",
+"workExample": {
+"about": {"sameAs": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/","url": "https://Backtesting.netlify.app/api-integration.html"
+}
+},
+"citation": {
+"@type": "CreativeWork",
+"about": {
+"url": "https://Backtesting.netlify.app/api-integration.html",
+"sameAs": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/"}
+},
+"hasPart":[
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"description":"In this section we will answer the most common questions to API Integration",
+"alternativeHeadline": "The most frequently asked questions about API Integration",
+"url": "api-integration.html",
+"mainEntity": [{
+"@type": "Question","name": "What APIs are available for integration with the platform?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "This will depend on the platform; some offer a wide range of API integrations while others may only offer limited options."
+}
+},{
+"@type": "Question","name": "Are there any fees associated with integrating an API?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Again, this will depend on the platform; many platforms include API integration for free, while some may charge a fee."
+}
+},{
+"@type": "Question","name": "How easy is it to use the integrated APIs?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Each platform provides different levels of user-friendliness when it comes to using their integrated APIs; however, most platforms provide detailed documentation and support to make setup and usage as easy as possible."
+}
+}]
+}]
+}
+</script><script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "Product",
+"name": "API Integration",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4","ratingCount": "28",
+"reviewCount": "69"
+}
+}
+</script></head>
+<body>
+<nav class="navbar navbar-expand-lg">
+<a class="navbar-brand" href="https://Backtesting.netlify.app/index.html"  ><img alt="img/logo.jpg" src="img/logo.jpg" ></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon  fa fa-bars"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="ml-auto align-items-center d-flex navbar-nav"><li class="nav-item"><a class="vf02780b7a4d2adfdba547162a165a31f nav-link" href="https://Backtesting.netlify.app/news.html" rel="nofollow" >News</a></li>
+	
+<li class="nav-item dropdown ">
+<a class="dropdown-toggle vf02780b7a4d2adfdba547162a165a31f nav-link" href="https://Backtesting.netlify.app/index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Backtesting Software</a>
+<div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://Backtesting.netlify.app/index.html"  >Backtesting Software</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/statistical-modeling.html"  >Statistical Modeling</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/machine-learning-techniques.html"  >Machine Learning Techniques</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/risk-management-strategies.html"  >Risk Management Strategies</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/strategy-testing-tools.html"  >Strategy Testing Tools</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/automated-trading-rules.html"  >Automated Trading Rules</a>
+	
+<li class="nav-item  dropdown">
+<a class="nav-link vf02780b7a4d2adfdba547162a165a31f dropdown-toggle" href="https://Backtesting.netlify.app/quantitative-strategies.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Quantitative Strategies</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://Backtesting.netlify.app/quantitative-strategies.html"  >Quantitative Strategies</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/trade-execution-algorithms.html"  >Trade Execution Algorithms</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/api-integration.html"  >API Integration</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/order-entry-and-management.html"  >Order Entry and Management</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/high-frequency-trading.html"  >High Frequency Trading</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/trade-reporting-and-compliance.html"  >Trade Reporting and Compliance</a>
+	
+<li class="dropdown  nav-item">
+<a class="vf02780b7a4d2adfdba547162a165a31f dropdown-toggle nav-link" href="https://Backtesting.netlify.app/automated-trading-platforms.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Automated Trading Platforms</a>
+<div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://Backtesting.netlify.app/automated-trading-platforms.html"  >Automated Trading Platforms</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/backtest-environment-setup.html"  >Backtest Environment Setup</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/strategy-development-process.html"  >Strategy Development Process</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/risk-management-rules.html"  >Risk Management Rules</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/portfolio-construction.html"  >Portfolio Construction</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/execution-analytics.html"  >Execution Analytics</a>
+	
+<li class="dropdown  nav-item">
+<a class="vf02780b7a4d2adfdba547162a165a31f nav-link dropdown-toggle" href="https://Backtesting.netlify.app/algorithmic-trading-systems.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Algorithmic Trading Systems</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://Backtesting.netlify.app/algorithmic-trading-systems.html"  >Algorithmic Trading Systems</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/data-visualization.html"  >Data Visualization</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/financial-modeling.html"  >Financial Modeling</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/portfolio-valuation.html"  >Portfolio Valuation</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/predictive-analytics.html"  >Predictive Analytics</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/data-mining.html"  >Data Mining</a>
+<li class="nav-item"><a class="nav-link vf02780b7a4d2adfdba547162a165a31f" rel=nofollow href="https://Backtesting.netlify.app/about-us.html">About Us</a>
+</li></ul>
+</div>
+</nav>
+<div class="v1e400c60dab1b81766c34a58e54c1b40 container-fluid"><div class=" row pb-5">
+<div class="container pt-3">
+<div class="row">
+<div class=" col-lg-12 text-center" id="API Integration">
+<h1 class="ybcd6c5097195e38e278221762921dd04 mb-0 text-dark">API Integration</h1> 
+<h2 class="b0ada9dd0e8ba9d0d1eda6cfe86324ff1 x22f8f0c25c2cf9a53127fea97e835060"><b><a class="y3e50f703816aae409f0ee921fd70c67f vf02780b7a4d2adfdba547162a165a31f xdea932ac797a2b6cda9b5c4c3e6cc13c" href="https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/">API Integration</a></b></h2></div>
+<div class="col-lg-12 m-auto ">
+<div class="content">
+
+API integration is the process of connecting software applications to each other, allowing them to communicate and share data. Through this connection, different programs can access information in a uniform manner, enabling efficient data exchange between systems. This connectivity eliminates the need for manual processes and reduces the time needed to complete tasks. API integration also allows organizations to customize their services and create innovative solutions that fit their needs. By leveraging APIs, businesses can quickly scale up or down depending on demand and integrate new technologies into existing systems with ease. The possibilities are nearly endless when it comes to API integration; companies can use it to automate workflows, build custom software products, enhance customer experiences, and much more. In essence, API integration is an invaluable tool for any business looking to stay competitive in today's digital landscape.</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<div class="container-fluid pb-4">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<h4 >Check our other pages :</h4>
+<ul>
+<li>
+<a href="https://Backtesting.netlify.app/index.html" >Execution Analytics</a></li>
+<li>
+<a href="https://Backtesting.netlify.app/statistical-modeling.html" >Strategy Development Process</a></li>
+<li>
+<a href="https://Backtesting.netlify.app/machine-learning-techniques.html" >Predictive Analytics</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div><div class="w913705a912d4109fb5c4a1b19114e57d py-5 u55f762f2eb7981197b2d7f3d81bafa58">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-6">
+<div class="pb-3 text-center">
+<h3> Frequently Asked Questions</h3>
+<div class="line"></div>
+</div>
+</div>
+</div>
+<div class="justify-content-center row">
+<div class="col-lg-8">
+<div class="accordion xac9aeefaad5f35cd6c10b07f8ae7d0f0" id="faqAccordion">
+<div class="border-0 card">
+<div class="card-header" id="heading0">
+<h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0"> What APIs are available for integration with the platform?<span class="lni-chevron-up"></span></h6>
+</div>
+<div class="collapse" id="collapse0" aria-labelledby="heading0" data-parent="#faqAccordion">
+<div class="card-body">This will depend on the platform; some offer a wide range of API integrations while others may only offer limited options.</div>
+</div>
+</div>
+<div class="card border-0">
+<div class="card-header" id="heading1">
+<h6 class="collapsed mb-0" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"> Are there any fees associated with integrating an API?<span class="lni-chevron-up"></span></h6>
+</div>
+<div class="collapse" id="collapse1" aria-labelledby="heading1" data-parent="#faqAccordion">
+<div class="card-body">Again, this will depend on the platform; many platforms include API integration for free, while some may charge a fee.</div>
+</div>
+</div>
+<div class="border-0 card">
+<div class="card-header" id="heading2">
+<h6 class="collapsed mb-0" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"> How easy is it to use the integrated APIs?<span class="lni-chevron-up"></span></h6>
+</div>
+<div class="collapse" id="collapse2" aria-labelledby="heading2" data-parent="#faqAccordion">
+<div class="card-body">Each platform provides different levels of user-friendliness when it comes to using their integrated APIs; however, most platforms provide detailed documentation and support to make setup and usage as easy as possible.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="pt-5 py-4 container" >
+<div class="row"><div class="col-lg-3"><p><a class="vf02780b7a4d2adfdba547162a165a31f" href="https://Backtesting.netlify.app/sitemap.html" rel="nofollow">Sitemap</a></p>
+<p><a class="vf02780b7a4d2adfdba547162a165a31f" href="https://Backtesting.netlify.app/privacy-policy.html" rel="nofollow">Privacy Policy</a></p>
+<p><a class="vf02780b7a4d2adfdba547162a165a31f" href="https://Backtesting.netlify.app/about-us.html" rel="nofollow">About Us</a></p>
+</p>
+</div></div>
+</div>
+</footer>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+var dropdowns = document.querySelectorAll('.dropdown-hover');
+function showDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'block';
+}
+function hideDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'none';
+}
+function handleClick(event) {
+var target = event.target;
+window.location.href = target.getAttribute('href');
+}
+dropdowns.forEach(function(dropdown) {
+dropdown.addEventListener('mouseenter', showDropdown);
+dropdown.addEventListener('mouseleave', hideDropdown);
+var dropdownMenu = dropdown.querySelector('.dropdown-toggle');
+dropdownMenu.addEventListener('click', handleClick);
+});
+});
+</script>
+</body>
+</html>
