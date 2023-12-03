@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><title>Backtest Environment Setup</title>
+<meta name="title" content="Backtest Environment Setup">
+<meta name="dc.title" content="Backtest Environment Setup">
+<meta name="description" content="The best backtesting platforms provide a thorough backtest environment setup to help you get the most out of your trading strategy.">
+<meta name="keywords" content="Backtest Environment Setup,Backtest Environment Setup">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://Backtesting.netlify.app/backtest-environment-setup.html">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,400,500,600,700,800,900&amp;display=swap">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="img/logo.jpg" alt="Backtest Environment Setup" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<style type="text/css"> 
+.w89b0ab4de2c06f38135355f87a2c380c .card .card-header h6.collapsed span{
+-webkit-transform: rotate(-180deg);
+transform: rotate(-180deg);
+}
+.navbar-toggler span{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid lightgrey;
+border-radius: 3px;
+}
+.e6c00e287dadfacc16992f45875a46441{
+position: relative;
+min-height: 30px
+}
+html{
+scroll-behavior: smooth;
+}
+.btn-md{
+padding: 15.1px 29.5px;
+border-radius: 0;
+}
+.navbar a{
+font-size: 18.1px!important;
+font-weight: bold;
+}
+.f45872f5fdf6ef1aa73b49bdef5408f26{
+font-size:16px!important;
+color: #686868;
+}
+.z9183f6b0440775ee64b71af30033a7f7{
+max-height: 300px;
+overflow-y: auto;
+}
+.b4a621ed8abb7707d7b51785836ad519a{
+background-color:#ffc107!important;
+border-color:#ffc107!important;
+color:#000000!important;
+}
+*{
+font-family: 'Kumbh Sans', sans-serif;
+}
+.d3e54243ead5988de7bce86436c0e7775 a,.fc8845b59d72bcf86b42a55d74a594b82 a{
+color:#121212!important;
+text-decoration: underline !important;
+}
+.w89b0ab4de2c06f38135355f87a2c380c .card .card-header h6.collapsed{
+color: #101360;
+}
+.f5d457180770e9b766f8e9225b7fe0484{
+transition: all 0.3s;
+border-radius: 30px;
+}
+footer *{
+font-size:16px !important;
+}
+.b0e5e220d3ad152fd844967d92aaf1beb{
+background-color: #060606;
+font-size: 30.2px;
+height: 56.4px;
+min-width: 56.5px;
+padding: 0.7rem;
+padding-top: 12.6px;
+color: #fff !important;
+border: 1px solid #040404;
+border-radius: 50%;
+}
+body{
+color: #343434;
+}
+.w89b0ab4de2c06f38135355f87a2c380c .card:last-child{
+margin-bottom: 0;
+}
+.fc8845b59d72bcf86b42a55d74a594b82 a{
+font-size:16px;
+}
+.v0191b9c091a2a8f738a428ff0fe0fea4{
+font-size: 2rem !important;
+}
+.w89b0ab4de2c06f38135355f87a2c380c .card .card-header{
+background-color: #ffffff;
+padding: 0;
+border-bottom-color: #f4f4f4;
+}
+.y643c8c41a1fde021e41124034a9e2e02 *{
+color: white !important;
+}
+.dropdown-menu{
+top:79%;
+max-width: 800px;
+overflow-x: auto;
+}
+.w89b0ab4de2c06f38135355f87a2c380c .card .card-body p:last-child{
+margin-bottom: 0;
+}
+.d3e54243ead5988de7bce86436c0e7775{
+background:#eceae6;
+color:#121212;
+}
+.fc8845b59d72bcf86b42a55d74a594b82 p,.fc8845b59d72bcf86b42a55d74a594b82 span,.fc8845b59d72bcf86b42a55d74a594b82 label{
+font-size:16px!important;
+}
+.z47ffb1d6ccf2b823778a3ef34dc649a0{
+color: #a5a5a5;
+font-size: 19.7px;
+margin-bottom: 20.8px;
+}
+.c61b00c7459bb565c2f421efb55e833eb{
+font-size: 45px!important;
+}
+.x2023b3e650a244da3da614fe62596da7{
+font-weight: inherit;
+background-image: linear-gradient(120deg, #ffcc5e 0%, #ffda6c 100%);
+background-repeat: no-repeat;
+background-size: 100% 30%;
+background-position: 0 90%;
+transition: background-size 0.2s ease-in;
+}
+.v413adb19a2abf1cf2dac111c4cdb4191{
+font-size: 14.4px;
+}
+.d1062fa13928267f3f754105a085b8412{
+font-size:45px!important;
+}
+.w89b0ab4de2c06f38135355f87a2c380c .card .card-header h6{
+cursor: pointer;
+padding: 1.75rem 2rem;
+color: #3f43fd;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-ms-grid-row-align: center;
+align-items: center;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.c62e71e185f012ccdd8b28dbdd3e91a97 i{
+border-radius: 50%;
+width: 37.3px;
+text-align: center;
+height: 37.4px;
+}
+ul{
+list-style: circle;
+}
+.w89b0ab4de2c06f38135355f87a2c380c{
+position: relative;
+z-index: 1;
+}
+.y2105065beff41f2bd248c4fba3011804 *{
+color:#000000;
+}
+.fca65e735fdeda8b7fc830d02eec53cdb{
+position: relative;
+z-index: 1;
+}
+.c62e71e185f012ccdd8b28dbdd3e91a97 i:hover{
+background: white;
+color: #ffc208;
+border-radius: 50%;
+width: 37.1px;
+text-align: center;
+height: 36.5px;
+}
+.d3e54243ead5988de7bce86436c0e7775 p,.d3e54243ead5988de7bce86436c0e7775 a,.d3e54243ead5988de7bce86436c0e7775 span,.d3e54243ead5988de7bce86436c0e7775 label{
+font-size:16px!important;
+}
+.nav-link{
+color: #000000!important;
+
+}
+.w89b0ab4de2c06f38135355f87a2c380c .card{
+position: relative;
+z-index: 1;
+margin-bottom: 1.5rem;
+}
+.v00548148d4c90bd980b46fd68380882d{
+color: #515151;
+}
+.w89b0ab4de2c06f38135355f87a2c380c .card .card-header h6 span{
+font-size: 1.5rem;
+}
+.nav-item{
+padding-left:7.7px;
+padding-right:8.1px;
+padding-top:5.5px;
+padding-bottom:4.8px;
+}
+a{
+text-decoration: none;
+}
+.yf470b877f8175f56b32226955d31c9f5{
+text-decoration: underline!important;color:#ff871d!important
+}
+.y643c8c41a1fde021e41124034a9e2e02{
+background: rgba(0, 0, 0, 0.6);
+text-align: center;
+}
+footer a{
+color:#ffffff;
+text-decoration: underline;
+}
+.fc8845b59d72bcf86b42a55d74a594b82{
+background:#ffffff;
+}
+footer{
+background:#0b0b0b;
+color:#ffffff;
+}
+.w89b0ab4de2c06f38135355f87a2c380c .card .card-body{
+padding: 1.75rem 2rem;
+}
+iframe{
+border: none!important;
+}
+.yadf80b4c09d8fdd7b22c1cd09820520a{
+font-size: 20.2px;
+font-weight: bold;
+}
+.u32712b675c379520fe392b9fc88eb25a:hover,.x2023b3e650a244da3da614fe62596da7:hover{
+background-size: 100% 100% !important;
+background-image: linear-gradient(120deg,  0%,  100%) !important;
+background-repeat: no-repeat !important;
+background-position: 0 90% !important;
+transition: background-size 0.2s ease-in !important;
+}
+.fc8845b59d72bcf86b42a55d74a594b82 *{
+color:#050505!important;
+}
+.f5d457180770e9b766f8e9225b7fe0484:hover{
+box-shadow: 0 49.6px 50.5px -25px rgb(0 0 0 / 30%);
+transform: rotate(-2deg) scale(1.03);
+}
+.y6161abb610740c2c3fa73e8bf0f1bc61{
+background:#eae8e4!important ;
+}
+.u9f94b574d4a8367e77eef539fc833988{
+width: 100%;
+max-height: 720px;
+object-fit: cover;
+object-position: center;
+display: block;
+max-height: 100%;
+max-width: 100%;
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+}
+ 
+@media only screen and (max-width:1000px) {
+.e6c00e287dadfacc16992f45875a46441 {
+min-height: 0px !important;
+}
+.d1062fa13928267f3f754105a085b8412 {
+font-size: 20px;
+}
+.z47ffb1d6ccf2b823778a3ef34dc649a0 {
+font-size: 15px !important;
+}
+.w6835154dd024045fbe31c4700d5e1767{
+padding-bottom: 0px !important;
+}
+} 
+</style>
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "ProfessionalService", 
+"logo": "img/logo.jpg",
+"image": "img/logo.jpg",
+"url": "https://Backtesting.netlify.app/",
+"address": {
+"@type": "PostalAddress"} }
+</script>
+<script type="application/ld+json">
+{
+"@type": "WebPage",
+"@context": "http://www.schema.org","temporalCoverage": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/",
+"significantLink": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/",
+"relatedLink": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/","lastReviewed": "2021-12-01",
+"mainContentOfPage": {
+"about": {"sameAs": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/","url": "https://Backtesting.netlify.app/backtest-environment-setup.html","additionalType": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/","name": "Backtest Environment Setup","identifier": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/","description": "Backtest Environment Setup",
+"disambiguatingDescription": "Backtest Environment Setup"},
+"accessibilitySummary": "Backtest Environment Setup"},
+"mainEntityOfPage": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/","keywords": ["Backtest Environment Setup"],
+"award": ["Best Backtest Environment Setup"],
+"teaches": ["Backtest Environment Setup"],
+"educationalUse": ["Backtest Environment Setup"],
+"text": "Backtest Environment Setup",
+"workExample": {
+"about": {"sameAs": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/","url": "https://Backtesting.netlify.app/backtest-environment-setup.html"
+}
+},
+"citation": {
+"@type": "CreativeWork",
+"about": {
+"url": "https://Backtesting.netlify.app/backtest-environment-setup.html",
+"sameAs": "https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/"}
+},
+"hasPart":[
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"description":"In this section we will answer the most common questions to Backtest Environment Setup",
+"alternativeHeadline": "The most frequently asked questions about Backtest Environment Setup",
+"url": "backtest-environment-setup.html",
+"mainEntity": [{
+"@type": "Question","name": "What is the best backtesting platform for my needs?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "The best backtesting platform for any given individual will depend on their specific requirements and goals. It is important to consider factors such as cost, ease of use, features, speed, scalability and security when deciding which backtesting platform to use."
+}
+},{
+"@type": "Question","name": "How do I set up a backtest environment?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Setting up a backtest environment involves configuring the necessary software and data to test out trading strategies with simulated data in order to evaluate their effectiveness before putting them into action in live markets. This includes sourcing or creating historical market data, selecting a suitable programming language or development platform, and setting up an execution engine or simulator to execute trades based on the trading strategy code being tested."
+}
+},{
+"@type": "Question","name": "What are some common challenges associated with setting up a backtest environment?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Common challenges associated with setting up a backtest environment include sourcing reliable historical market data; finding an appropriate execution engine or simulator; deciding between real time simulation versus end-of-day testing; accurately capturing transaction costs within the simulations; and ensuring that the test results are accurate by accounting for slippage or other external influences during trade execution."
+}
+}]
+}]
+}
+</script><script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "Product",
+"name": "Backtest Environment Setup",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "5","ratingCount": "71",
+"reviewCount": "82"
+}
+}
+</script></head>
+<body>
+<nav class="navbar navbar-expand-lg">
+<a class="navbar-brand" href="https://Backtesting.netlify.app/index.html"  ><img alt="img/logo.jpg" src="img/logo.jpg" ></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon  fa fa-bars"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav align-items-center d-flex ml-auto"><li class="nav-item"><a class="u32712b675c379520fe392b9fc88eb25a nav-link" href="https://Backtesting.netlify.app/news.html" rel="nofollow" >News</a></li>
+	
+<li class=" nav-item dropdown">
+<a class="nav-link u32712b675c379520fe392b9fc88eb25a dropdown-toggle" href="https://Backtesting.netlify.app/index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Backtesting Software</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://Backtesting.netlify.app/index.html"  >Backtesting Software</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/statistical-modeling.html"  >Statistical Modeling</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/machine-learning-techniques.html"  >Machine Learning Techniques</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/risk-management-strategies.html"  >Risk Management Strategies</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/strategy-testing-tools.html"  >Strategy Testing Tools</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/automated-trading-rules.html"  >Automated Trading Rules</a>
+	
+<li class="nav-item  dropdown">
+<a class="dropdown-toggle nav-link u32712b675c379520fe392b9fc88eb25a" href="https://Backtesting.netlify.app/quantitative-strategies.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Quantitative Strategies</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://Backtesting.netlify.app/quantitative-strategies.html"  >Quantitative Strategies</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/trade-execution-algorithms.html"  >Trade Execution Algorithms</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/api-integration.html"  >API Integration</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/order-entry-and-management.html"  >Order Entry and Management</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/high-frequency-trading.html"  >High Frequency Trading</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/trade-reporting-and-compliance.html"  >Trade Reporting and Compliance</a>
+	
+<li class="dropdown nav-item ">
+<a class="u32712b675c379520fe392b9fc88eb25a nav-link dropdown-toggle" href="https://Backtesting.netlify.app/automated-trading-platforms.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Automated Trading Platforms</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://Backtesting.netlify.app/automated-trading-platforms.html"  >Automated Trading Platforms</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/backtest-environment-setup.html"  >Backtest Environment Setup</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/strategy-development-process.html"  >Strategy Development Process</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/risk-management-rules.html"  >Risk Management Rules</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/portfolio-construction.html"  >Portfolio Construction</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/execution-analytics.html"  >Execution Analytics</a>
+	
+<li class="nav-item  dropdown">
+<a class="u32712b675c379520fe392b9fc88eb25a nav-link dropdown-toggle" href="https://Backtesting.netlify.app/algorithmic-trading-systems.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Algorithmic Trading Systems</a>
+<div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://Backtesting.netlify.app/algorithmic-trading-systems.html"  >Algorithmic Trading Systems</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/data-visualization.html"  >Data Visualization</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/financial-modeling.html"  >Financial Modeling</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/portfolio-valuation.html"  >Portfolio Valuation</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/predictive-analytics.html"  >Predictive Analytics</a>
+<a class="dropdown-item" href="https://Backtesting.netlify.app/data-mining.html"  >Data Mining</a>
+<li class="nav-item"><a class="nav-link u32712b675c379520fe392b9fc88eb25a" rel=nofollow href="https://Backtesting.netlify.app/about-us.html">About Us</a>
+</li></ul>
+</div>
+</nav>
+<div class="container-fluid fc8845b59d72bcf86b42a55d74a594b82"><div class=" pb-5 row">
+<div class="pt-3 container">
+<div class="row">
+<div class="text-center  col-lg-12" id="Backtest Environment Setup">
+<h1 class="mb-0 d1062fa13928267f3f754105a085b8412 text-dark">Backtest Environment Setup</h1> 
+<h2 class="z47ffb1d6ccf2b823778a3ef34dc649a0 v00548148d4c90bd980b46fd68380882d"><b><a class="yf470b877f8175f56b32226955d31c9f5 u32712b675c379520fe392b9fc88eb25a v0191b9c091a2a8f738a428ff0fe0fea4" href="https://prodanadvisor.com/best-backtesting-platforms-a-comprehensive-guide/">Backtest Environment Setup</a></b></h2></div>
+<div class="m-auto  col-lg-12">
+<div class="content">
+
+Backtesting is an essential part of the investment process. It involves simulating the performance of a trading strategy or portfolio over a given period of time, using historical data to evaluate how successful it would have been in actual conditions. Setting up a backtest environment requires careful planning and configuration to ensure accurate results. This includes choosing a data source, selecting relevant parameters, defining objectives, and configuring any settings necessary for testing. Additionally, it may be useful to consider factors such as costs or slippage which could affect the outcome of the test. Once complete, this setup provides investors with invaluable insight into potential strategies or portfolios - allowing them to make informed decisions in uncertain markets.</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<div class="pb-4 container-fluid">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<h4 >Check our other pages :</h4>
+<ul>
+<li>
+<a href="https://Backtesting.netlify.app/index.html" >Trade Reporting and Compliance</a></li>
+<li>
+<a href="https://Backtesting.netlify.app/statistical-modeling.html" >Financial Modeling</a></li>
+<li>
+<a href="https://Backtesting.netlify.app/machine-learning-techniques.html" >Automated Trading Rules</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div><div class="fca65e735fdeda8b7fc830d02eec53cdb py-5 d3e54243ead5988de7bce86436c0e7775">
+<div class="container">
+<div class="justify-content-center row">
+<div class="col-lg-6">
+<div class="text-center pb-3">
+<h3> Frequently Asked Questions</h3>
+<div class="line"></div>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="accordion w89b0ab4de2c06f38135355f87a2c380c" id="faqAccordion">
+<div class="card border-0">
+<div class="card-header" id="heading0">
+<h6 class="collapsed mb-0" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0"> What is the best backtesting platform for my needs?<span class="lni-chevron-up"></span></h6>
+</div>
+<div class="collapse" id="collapse0" aria-labelledby="heading0" data-parent="#faqAccordion">
+<div class="card-body">The best backtesting platform for any given individual will depend on their specific requirements and goals. It is important to consider factors such as cost, ease of use, features, speed, scalability and security when deciding which backtesting platform to use.</div>
+</div>
+</div>
+<div class="card border-0">
+<div class="card-header" id="heading1">
+<h6 class="collapsed mb-0" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"> How do I set up a backtest environment?<span class="lni-chevron-up"></span></h6>
+</div>
+<div class="collapse" id="collapse1" aria-labelledby="heading1" data-parent="#faqAccordion">
+<div class="card-body">Setting up a backtest environment involves configuring the necessary software and data to test out trading strategies with simulated data in order to evaluate their effectiveness before putting them into action in live markets. This includes sourcing or creating historical market data, selecting a suitable programming language or development platform, and setting up an execution engine or simulator to execute trades based on the trading strategy code being tested.</div>
+</div>
+</div>
+<div class="card border-0">
+<div class="card-header" id="heading2">
+<h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"> What are some common challenges associated with setting up a backtest environment?<span class="lni-chevron-up"></span></h6>
+</div>
+<div class="collapse" id="collapse2" aria-labelledby="heading2" data-parent="#faqAccordion">
+<div class="card-body">Common challenges associated with setting up a backtest environment include sourcing reliable historical market data; finding an appropriate execution engine or simulator; deciding between real time simulation versus end-of-day testing; accurately capturing transaction costs within the simulations; and ensuring that the test results are accurate by accounting for slippage or other external influences during trade execution.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="py-4 container pt-5" >
+<div class="row"><div class="col-lg-3"><p><a class="u32712b675c379520fe392b9fc88eb25a" href="https://Backtesting.netlify.app/sitemap.html" rel="nofollow">Sitemap</a></p>
+<p><a class="u32712b675c379520fe392b9fc88eb25a" href="https://Backtesting.netlify.app/privacy-policy.html" rel="nofollow">Privacy Policy</a></p>
+<p><a class="u32712b675c379520fe392b9fc88eb25a" href="https://Backtesting.netlify.app/about-us.html" rel="nofollow">About Us</a></p>
+</p>
+</div></div>
+</div>
+</footer>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+var dropdowns = document.querySelectorAll('.dropdown-hover');
+function showDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'block';
+}
+function hideDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'none';
+}
+function handleClick(event) {
+var target = event.target;
+window.location.href = target.getAttribute('href');
+}
+dropdowns.forEach(function(dropdown) {
+dropdown.addEventListener('mouseenter', showDropdown);
+dropdown.addEventListener('mouseleave', hideDropdown);
+var dropdownMenu = dropdown.querySelector('.dropdown-toggle');
+dropdownMenu.addEventListener('click', handleClick);
+});
+});
+</script>
+</body>
+</html>
